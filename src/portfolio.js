@@ -23,7 +23,7 @@ const greeting = {
   username: "Yulin Xia",
   title: "Hi, I'm Yulin",
   subTitle: emoji(
-    "Waterloo Computer Engineering student who ships across production SRE, full-stack product engineering, and local-first AI workspaces — from PersonalOps (Tauri + LangGraph + Cursor Agent) to RAG systems and undergraduate research in dialogue systems, static analysis, and computer vision."
+    "Waterloo Computer Engineering student who ships across production SRE, full-stack product engineering, and AI workspace platforms — PersonalOps (local Tauri desktop + live cloud app at personalops.live) with LangGraph RAG, multi-tenant auth, and undergraduate research in dialogue systems, static analysis, and computer vision."
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -49,10 +49,10 @@ const skillsSection = {
       "⚡ Own production cloud infrastructure — Terraform, Kubernetes, observability, and on-call runbooks"
     ),
     emoji(
-      "⚡ Ship full-stack products with React, TypeScript, FastAPI, and cloud-native CI/CD pipelines"
+      "⚡ Ship full-stack SaaS — React, TypeScript, FastAPI, PostgreSQL, JWT auth, Docker on GCP, and HTTPS with Caddy"
     ),
     emoji(
-      "⚡ Build local-first AI workspaces — LangGraph RAG, Cursor Agent, ChromaDB, OAuth life integrations, and human-in-the-loop personalization"
+      "⚡ Build AI workspaces — LangGraph RAG, Cursor Agent (desktop), ChromaDB, Resend email verification, GCS storage, and human-in-the-loop personalization"
     ),
     emoji(
       "⚡ Research across dialogue systems, static analysis, computer vision, reinforcement learning, and NLP"
@@ -137,7 +137,7 @@ const educationInfo = {
       descBullets: [
         "Co-op sequence: Caerulean AI → Ford (×2) → TextNow (×2)",
         "Research: Furhat dialogue systems, EISOP static analysis, computer vision",
-        "Personal project: PersonalOps — local-first AI workspace with dual agent pipelines"
+        "Personal project: PersonalOps — dual-edition AI workspace (Tauri desktop + cloud at personalops.live)"
       ]
     }
   ]
@@ -251,16 +251,38 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/personalOps-cover.png"),
-      projectName: "PersonalOps — Local-First AI Workspace",
+      projectName: "PersonalOps — AI Workspace (Desktop + Cloud)",
       projectDesc:
-        "Desktop AI workspace (Tauri 2 + React + FastAPI) unifying study, code, career, and life. Dual pipelines: LangGraph RAG with ChromaDB citations, and Cursor Agent for codebase-aware chat. Life workspace syncs Outlook/Gmail via OAuth PKCE; agent personalization logs prompts, distills habits with LLM review, and archives encrypted logs to GCS.",
-      footerLink: []
+        "Full-stack AI workspace from one codebase: local-first Tauri desktop (LangGraph RAG + Cursor Agent, Outlook/Gmail OAuth, agent personalization) and production cloud web app at personalops.live — multi-tenant auth, per-user API keys, GCS storage, Docker on GCP with Caddy HTTPS.",
+      techStack: [
+        "React",
+        "TypeScript",
+        "Tauri",
+        "FastAPI",
+        "Python",
+        "LangGraph",
+        "PostgreSQL",
+        "Docker",
+        "GCP",
+        "ChromaDB"
+      ],
+      footerLink: [{name: "Live Demo", url: "https://personalops.live"}]
     },
     {
       image: require("./assets/images/aiPuzzel.webp"),
       projectName: "WatAIOliver — WAT.ai Campus RAG Assistant",
       projectDesc:
         "RAG-based LLM assistant for course materials with chunked embeddings, vector search, and citation-first answers. Compared GPT-4o-mini, Azure OpenAI, and Gemini on latency and citation quality.",
+      techStack: [
+        "React",
+        "TypeScript",
+        "FastAPI",
+        "Python",
+        "LangChain",
+        "ChromaDB",
+        "OpenAI",
+        "Supabase"
+      ],
       footerLink: [
         {name: "GitHub", url: "https://github.com/XiandaDu/WatAIOliver"}
       ]
@@ -270,6 +292,16 @@ const bigProjects = {
       projectName: "Stock Market Monitoring System",
       projectDesc:
         "Full-stack watchlists, charts (SMA, RSI, MACD), Finnhub news, backtests with backtrader, and an AI finance tutor via Llama 3. Educational use only.",
+      techStack: [
+        "React",
+        "TypeScript",
+        "FastAPI",
+        "Python",
+        "Tailwind",
+        "Recharts",
+        "Llama 3",
+        "Finnhub"
+      ],
       footerLink: [
         {
           name: "GitHub",
@@ -282,6 +314,7 @@ const bigProjects = {
       projectName: "yulinnote.online",
       projectDesc:
         "Solo-built note-taking app with authentication and persistent storage — designed for real daily use and deployed on Oracle Cloud Infrastructure.",
+      techStack: ["React", "TypeScript", "MongoDB", "Oracle Cloud", "Node.js"],
       footerLink: [
         {name: "Live Demo", url: "http://yulinnote.online"},
         {
@@ -303,12 +336,30 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "URA — Furhat RAG Dialogue (Ongoing)",
+      subtitle:
+        "May 2026 — Present · SIRRL, University of Waterloo. Applying RAG to Furhat–student conversations in child-facing studies — Python pipelines to chunk, embed, and retrieve study materials; integrate grounded responses with the Furhat SDK (turn-taking, speech routing); evaluate retrieval quality and latency in lab sessions. Stack: Python, Furhat SDK, LangChain/LangGraph, OpenAI embeddings, vector search, FastAPI.",
+      image: require("./assets/images/furhat-logo.webp"),
+      imageAlt: "Furhat RAG dialogue research",
+      footerLink: [
+        {
+          name: "SIRRL Lab",
+          url: "https://uwaterloo.ca/social-intelligent-robotics-research-lab/meet-our-robots"
+        }
+      ]
+    },
+    {
       title: "URA — Furhat Social Robots / Dialogue Systems",
       subtitle:
-        "Built Python dialogue with the Furhat SDK for child-facing social anxiety studies — intelligent responses, turn-taking, and speech-conditioned routing. Extended lab control panel for multi-robot scripted scenes. Returning May–Aug 2026.",
+        "Sep 2025 — Dec 2025 · Built Python dialogue with the Furhat SDK for child-facing social anxiety studies — intelligent responses, turn-taking, and speech-conditioned routing. Extended lab control panel for multi-robot scripted scenes.",
       image: require("./assets/images/furhat-logo.webp"),
       imageAlt: "Dialogue systems research",
-      footerLink: []
+      footerLink: [
+        {
+          name: "SIRRL Lab",
+          url: "https://uwaterloo.ca/social-intelligent-robotics-research-lab/meet-our-robots"
+        }
+      ]
     },
     {
       title: "URA — EISOP Checker Framework",
@@ -316,7 +367,12 @@ const achievementSection = {
         "Contributed to null-safety static analysis for Spring apps on the Checker Framework. Compared custom Nullness Checker with Uber NullAway; resolved toolchain compatibility and improved coverage.",
       image: require("./assets/images/EISOP.png"),
       imageAlt: "Static analysis research",
-      footerLink: []
+      footerLink: [
+        {
+          name: "EISOP Framework",
+          url: "https://eisop.github.io/cf/"
+        }
+      ]
     },
     {
       title: "2D Puzzle Assembly",
@@ -335,12 +391,20 @@ const achievementSection = {
       title: "TD3 Bipedal Walker Agent",
       subtitle:
         "Reinforcement learning project training a TD3 agent to walk and jump in rldurham/Walker. Reward shaping, rolling-median scaling, velocity and jump bonuses — standard and hardcore environments.",
-      image: require("./assets/images/skill.svg"),
+      image: require("./assets/images/bipedal-robot-walker.png"),
       imageAlt: "Reinforcement learning walker agent",
       footerLink: [
         {
           name: "GitHub",
           url: "https://github.com/xiayulin123/rl-walker-agent"
+        },
+        {
+          name: "Standard Demo",
+          url: "/videos/rl-walker-standard.mp4"
+        },
+        {
+          name: "Hardcore Demo",
+          url: "/videos/rl-walker-hardcore.mp4"
         }
       ]
     },
@@ -348,7 +412,7 @@ const achievementSection = {
       title: "Privacy Policy Multi-Label Classification",
       subtitle:
         "NLP pipeline on OPP-115: EDA, DistilBERT + Linear SVM baseline (~0.63 F1 macro), and zero/few-shot LLM comparison with Qwen2.5 for 12 privacy practice categories.",
-      image: require("./assets/images/jsFramework.svg"),
+      image: require("./assets/images/classification.jpg"),
       imageAlt: "Privacy policy classifier",
       footerLink: [
         {

@@ -65,6 +65,22 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                    {project.techStack && project.techStack.length > 0 ? (
+                      <div className="project-tech-tags">
+                        {project.techStack.map((tech, j) => (
+                          <span
+                            key={j}
+                            className={
+                              isDark
+                                ? "dark-mode project-tech-tag"
+                                : "project-tech-tag"
+                            }
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    ) : null}
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
