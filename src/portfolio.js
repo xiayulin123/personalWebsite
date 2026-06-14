@@ -269,7 +269,7 @@ const bigProjects = {
       footerLink: [{name: "Live Demo", url: "https://personalops.live"}]
     },
     {
-      image: require("./assets/images/aiPuzzel.webp"),
+      image: require("./assets/images/rag-logo.png"),
       projectName: "WatAIOliver — WAT.ai Campus RAG Assistant",
       projectDesc:
         "RAG-based LLM assistant for course materials with chunked embeddings, vector search, and citation-first answers. Compared GPT-4o-mini, Azure OpenAI, and Gemini on latency and citation quality.",
@@ -322,6 +322,53 @@ const bigProjects = {
           url: "https://github.com/xiayulin123/yulinnote.online"
         }
       ]
+    },
+    {
+      image: require("./assets/images/puzzle-assembly.webp"),
+      projectName: "2D Puzzle Assembly",
+      projectDesc:
+        "Computer vision pipeline reconstructing images from randomly positioned puzzle pieces on MS-COCO tiles and DAFNE fresco fragments. Lightweight CNN pose regression (~144K params) with unified preprocessing for both datasets.",
+      techStack: ["Python", "PyTorch", "OpenCV", "CNN", "MS-COCO", "DAFNE"],
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/xiayulin123/2D-Puzzle-Assembly"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/bipedal-robot-walker.png"),
+      projectName: "TD3 Bipedal Walker Agent",
+      projectDesc:
+        "Reinforcement learning project training a TD3 agent to walk and jump in rldurham/Walker. Reward shaping, rolling-median scaling, velocity and jump bonuses — standard and hardcore environments.",
+      techStack: ["Python", "PyTorch", "TD3", "Reinforcement Learning", "Gymnasium"],
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/xiayulin123/rl-walker-agent"
+        },
+        {
+          name: "Standard Demo",
+          url: "/videos/rl-walker-standard.mp4"
+        },
+        {
+          name: "Hardcore Demo",
+          url: "/videos/rl-walker-hardcore.mp4"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/classification.jpg"),
+      projectName: "Privacy Policy Multi-Label Classification",
+      projectDesc:
+        "NLP pipeline on OPP-115: EDA, DistilBERT + Linear SVM baseline (~0.63 F1 macro), and zero/few-shot LLM comparison with Qwen2.5 for 12 privacy practice categories.",
+      techStack: ["Python", "DistilBERT", "NLP", "SVM", "Qwen2.5", "Jupyter"],
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/xiayulin123/privacy-policy-classifier"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -332,7 +379,7 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Research Experience 🔬"),
   subtitle:
-    "Undergraduate research and independent ML projects — dialogue systems, static analysis, computer vision, reinforcement learning, and NLP.",
+    "Undergraduate research at the University of Waterloo — dialogue systems and static analysis.",
 
   achievementsCards: [
     {
@@ -371,53 +418,6 @@ const achievementSection = {
         {
           name: "EISOP Framework",
           url: "https://eisop.github.io/cf/"
-        }
-      ]
-    },
-    {
-      title: "2D Puzzle Assembly",
-      subtitle:
-        "Computer vision pipeline reconstructing images from randomly positioned puzzle pieces on MS-COCO tiles and DAFNE fresco fragments. Lightweight CNN pose regression (~144K params) with unified preprocessing for both datasets.",
-      image: require("./assets/images/puzzle-assembly.webp"),
-      imageAlt: "2D puzzle assembly research",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/xiayulin123/2D-Puzzle-Assembly"
-        }
-      ]
-    },
-    {
-      title: "TD3 Bipedal Walker Agent",
-      subtitle:
-        "Reinforcement learning project training a TD3 agent to walk and jump in rldurham/Walker. Reward shaping, rolling-median scaling, velocity and jump bonuses — standard and hardcore environments.",
-      image: require("./assets/images/bipedal-robot-walker.png"),
-      imageAlt: "Reinforcement learning walker agent",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/xiayulin123/rl-walker-agent"
-        },
-        {
-          name: "Standard Demo",
-          url: "/videos/rl-walker-standard.mp4"
-        },
-        {
-          name: "Hardcore Demo",
-          url: "/videos/rl-walker-hardcore.mp4"
-        }
-      ]
-    },
-    {
-      title: "Privacy Policy Multi-Label Classification",
-      subtitle:
-        "NLP pipeline on OPP-115: EDA, DistilBERT + Linear SVM baseline (~0.63 F1 macro), and zero/few-shot LLM comparison with Qwen2.5 for 12 privacy practice categories.",
-      image: require("./assets/images/classification.jpg"),
-      imageAlt: "Privacy policy classifier",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/xiayulin123/privacy-policy-classifier"
         }
       ]
     }
