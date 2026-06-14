@@ -19,6 +19,14 @@
   color: $subTitle;
 }
 
+.software-skill-inline > i.devicon-typescript-plain {
+  color: #3178c6;
+}
+
+.software-skill-inline > i.devicon-typescript-plain:hover {
+  color: #235a97;
+}
+
 .software-skill-inline > i:hover {
   color: $skillsColor;
 }

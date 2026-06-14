@@ -78,7 +78,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "TypeScript",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "devicon-typescript-plain"
     },
     {
       skillName: "Java",
@@ -86,7 +86,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Go",
-      fontAwesomeClassname: "fab fa-golang"
+      fontAwesomeClassname: "fa-brands fa-golang"
     },
     {
       skillName: "swift",
