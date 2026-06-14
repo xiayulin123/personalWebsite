@@ -60,65 +60,64 @@ const skillsSection = {
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+  /* Devicon classes: https://devicon.dev/ — append " colored" for brand colors */
 
   softwareSkills: [
     {
       skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
+      fontAwesomeClassname: "devicon-python-plain colored"
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "devicon-javascript-plain colored"
     },
     {
       skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      fontAwesomeClassname: "devicon-react-original colored"
     },
     {
       skillName: "TypeScript",
-      fontAwesomeClassname: "devicon-typescript-plain"
+      fontAwesomeClassname: "devicon-typescript-plain colored"
     },
     {
       skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
+      fontAwesomeClassname: "devicon-java-plain colored"
     },
     {
       skillName: "Go",
-      fontAwesomeClassname: "fa-brands fa-golang"
+      fontAwesomeClassname: "devicon-go-plain colored"
     },
     {
       skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      fontAwesomeClassname: "devicon-swift-plain colored"
     },
     {
       skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: "devicon-postgresql-plain colored"
     },
     {
       skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      fontAwesomeClassname: "devicon-amazonwebservices-plain-wordmark colored"
     },
     {
       skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      fontAwesomeClassname: "devicon-docker-plain colored"
     },
     {
       skillName: "kubernetes",
-      fontAwesomeClassname: "fas fa-dharmachakra"
+      fontAwesomeClassname: "devicon-kubernetes-plain colored"
     },
     {
       skillName: "linux",
-      fontAwesomeClassname: "fab fa-linux"
+      fontAwesomeClassname: "devicon-linux-plain colored"
     },
     {
       skillName: "google-cloud",
-      fontAwesomeClassname: "fab fa-google"
+      fontAwesomeClassname: "devicon-googlecloud-plain colored"
     },
     {
       skillName: "tauri",
-      fontAwesomeClassname: "fas fa-desktop"
+      fontAwesomeClassname: "fas fa-desktop tauri-icon"
     }
   ],
   display: true // Set false to hide this section, defaults to true
