@@ -25,7 +25,8 @@ const greeting = {
   subTitle: emoji(
     "Waterloo Computer Engineering student who ships across production SRE, full-stack product engineering, and AI workspace platforms — PersonalOps (local Tauri desktop + live cloud app at personalops.live) with LangGraph RAG, multi-tenant auth, and undergraduate research in dialogue systems, static analysis, and computer vision."
   ),
-  resumeLink: "", // Set to empty to hide the button
+  resumeLink:
+    "https://raw.githubusercontent.com/xiayulin123/personalWebsite/main/resume-ai-agent.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -458,7 +459,7 @@ const podcastSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {

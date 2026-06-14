@@ -27,3 +27,4 @@ public/profile.json
 public/blogs.json
 
 *.md
+!README.md
